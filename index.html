@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meet Vicky – ICT • Digital • Support</title>
+<meta name="description" content="Maak kennis met Vicky Ryckewaert: ICT-support, websites, webshops en digitale cursussen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f5f0;--card:#fff;--ink:#1f2a44;--muted:#5b6682;--accent:#e0a042;--accent-soft:#fdf1dc;--line:#e6e2d8;--navy:#1f2a44}
+@media (prefers-color-scheme:dark){:root{--bg:#121826;--card:#1b2335;--ink:#eef1f7;--muted:#a3adc4;--accent:#f4b860;--accent-soft:#2a2a26;--line:#2a3450;--navy:#0c111c}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;letter-spacing:2px;text-decoration:none}
+.logo span{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:15px}
+nav ul a{text-decoration:none;color:var(--muted)}
+nav ul a:hover{color:var(--ink)}
+@media (max-width:720px){nav ul{display:none}}
+header{padding:90px 0 70px}
+.tag{display:inline-block;font-size:13px;font-weight:700;letter-spacing:2px;color:var(--accent);text-transform:uppercase;margin-bottom:18px}
+h1{font-size:clamp(40px,7vw,68px);line-height:1.05;letter-spacing:-1.5px;font-weight:800}
+h1 em{font-style:normal;color:var(--accent)}
+.lead{font-size:clamp(18px,2.3vw,21px);color:var(--muted);max-width:640px;margin-top:22px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:15px}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn.ghost{border:1.5px solid var(--line)}
+.btn:hover{transform:translateY(-1px)}
+section{padding:70px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,38px);letter-spacing:-.8px;margin-bottom:10px}
+.sub{color:var(--muted);max-width:620px;margin-bottom:36px}
+.story p{max-width:680px;margin-bottom:16px;font-size:18px}
+.story p.big{font-size:22px;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card .ico{font-size:30px;margin-bottom:12px}
+.card h3{font-size:19px;margin-bottom:6px}
+.card p{color:var(--muted);font-size:15.5px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chips span{font-size:12.5px;background:var(--accent-soft);color:var(--ink);padding:4px 10px;border-radius:999px}
+.flow{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.flow button{font:inherit;font-weight:600;font-size:15px;cursor:pointer;padding:11px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.flow button[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:#1f2a44}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;min-height:150px}
+.panel h3{font-size:22px;margin-bottom:8px}
+.panel p{color:var(--muted);max-width:620px}
+.panel .ex{margin-top:14px;padding:14px 16px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0;font-size:15px}
+.traits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,165px),1fr));gap:14px}
+.trait{padding:20px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.trait b{display:block;margin-bottom:4px}
+.trait span{color:var(--muted);font-size:15px}
+.timeline{list-style:none;border-left:2px solid var(--line);margin-left:6px}
+.timeline li{position:relative;padding:0 0 26px 26px}
+.timeline li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.timeline .when{font-size:13px;font-weight:700;color:var(--accent);letter-spacing:1px;text-transform:uppercase}
+.timeline h3{font-size:18px}
+.timeline p{color:var(--muted);font-size:15.5px}
+.why{background:var(--navy);color:#eef1f7;border-radius:24px;padding:44px}
+.why h2{color:#fff}
+.why p{color:#c9d1e3;max-width:680px;margin-bottom:14px;font-size:18px}
+.contact{text-align:center}
+.contact .btns{justify-content:center}
+footer{padding:30px 0 50px;text-align:center;color:var(--muted);font-size:14px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">MEET <span>VICKY</span></a>
+  <ul>
+    <li><a href="#verhaal">Mijn verhaal</a></li>
+    <li><a href="#projecten">Projecten</a></li>
+    <li><a href="#aanpak">Hoe ik werk</a></li>
+    <li><a href="#ervaring">Ervaring</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header id="top"><div class="wrap">
+  <div class="tag">ICT • Digital • Support</div>
+  <h1>Hi, ik ben Vicky.<br><em>Ik zoek graag uit</em> waarom iets niet werkt.</h1>
+  <p class="lead">Van DOS en de eerste Windows-versies tot websites, webshops en digitale cursussen. Ik help mensen met technologie en leg de oplossing uit in gewone taal.</p>
+  <div class="btns">
+    <a class="btn primary" href="#projecten">Ontdek mijn projecten</a>
+    <a class="btn ghost" href="#contact">Neem contact op</a>
+  </div>
+</div></header>
+
+<section id="verhaal"><div class="wrap story">
+  <h2>My story</h2>
+  <p class="big">Mijn kennismaking met ICT begon lang vóór smartphones en sociale media.</p>
+  <p>Ik leerde werken met computers in de tijd van DOS en de eerste Windows-versies. Technologie is sindsdien enorm veranderd, en ik ben mee veranderd.</p>
+  <p>Wat gebleven is, is mijn nieuwsgierigheid. Ik wil begrijpen hoe iets werkt. Ik zoek graag uit waarom iets niet werkt. En als ik iets nieuws nodig heb, leer ik het.</p>
+  <p>Vandaag bouw en beheer ik mijn eigen website en webshop, maak ik online cursussen en blijf ik mezelf bijscholen. In 2025 behaalde ik mijn diploma ICT en Administratie.</p>
+</div></section>
+
+<section id="projecten"><div class="wrap">
+  <h2>My projects</h2>
+  <p class="sub">Geen theorie, maar dingen die ik zelf heb opgezet en die vandaag gebruikt worden.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="ico" aria-hidden="true">🛒</div>
+      <h3>Website &amp; webshop: Atelier Mystique</h3>
+      <p>Mijn eigen zaak, online helemaal zelf opgebouwd en beheerd: van productbeheer en online verkoop tot administratie.</p>
+      <div class="chips"><span>website</span><span>webshop</span><span>productbeheer</span><span>digitale tools</span></div>
+    </article>
+    <article class="card">
+      <div class="ico" aria-hidden="true">📚</div>
+      <h3>Boekenuitleen-app voor CoderDojo</h3>
+      <p>Als vrijwilliger zag ik dat uitgeleende boeken moeilijk op te volgen waren. Dus bouwde ik er zelf een applicatie voor.</p>
+      <div class="chips"><span>probleem</span><span>nadenken</span><span>bouwen</span><span>gebruiken</span></div>
+    </article>
+    <article class="card">
+      <div class="ico" aria-hidden="true">🎓</div>
+      <h3>Online cursussen</h3>
+      <p>Van inhoud naar een digitale leerervaring: cursussen en lesmateriaal ontwikkelen, structureren en online beheren.</p>
+      <div class="chips"><span>digitale leercontent</span><span>structuur</span><span>beheer</span></div>
+    </article>
+    <article class="card">
+      <div class="ico" aria-hidden="true">🖥️</div>
+      <h3>ICT-support &amp; opleidingen</h3>
+      <p>Als ICT-verantwoordelijke was ik het eerste aanspreekpunt voor collega's met ICT-problemen, beheerde ik toestellen en software en gaf ik interne opleidingen.</p>
+      <div class="chips"><span>helpdesk</span><span>hardware &amp; software</span><span>opleiding</span></div>
+    </article>
+  </div>
+</div></section>
+
+<section id="aanpak"><div class="wrap">
+  <h2>How I work</h2>
+  <p class="sub">Een probleem? Geef het maar. Klik door de stappen.</p>
+  <div class="flow" role="tablist" aria-label="Mijn aanpak">
+    <button role="tab" aria-selected="true" data-i="0">1. Luisteren</button>
+    <button role="tab" aria-selected="false" data-i="1">2. Onderzoeken</button>
+    <button role="tab" aria-selected="false" data-i="2">3. Oplossen</button>
+    <button role="tab" aria-selected="false" data-i="3">4. Verbeteren</button>
+  </div>
+  <div class="panel" role="tabpanel" id="panel" aria-live="polite"></div>
+
+  <div class="traits" style="margin-top:34px">
+    <div class="trait"><b>Zelfstandig</b><span>Ik neem verantwoordelijkheid en wacht niet af als ik zelf een oplossing kan vinden.</span></div>
+    <div class="trait"><b>Mensgericht</b><span>Een technisch probleem is voor de gebruiker gewoon een probleem. Ik leg het uit in begrijpelijke taal.</span></div>
+    <div class="trait"><b>Nieuwsgierig</b><span>Nieuwe software of systemen? Geef me iets om uit te zoeken.</span></div>
+    <div class="trait"><b>Praktisch</b><span>Niet de meest ingewikkelde oplossing, wel de oplossing die werkt.</span></div>
+    <div class="trait"><b>Verbetergericht</b><span>Komt dezelfde vraag telkens terug? Dan zoek ik een structurele oplossing.</span></div>
+  </div>
+</div></section>
+
+<section id="ervaring"><div class="wrap">
+  <h2>My experience</h2>
+  <p class="sub">Een pad met veel afwisseling, en ICT als rode draad.</p>
+  <ul class="timeline">
+    <li><div class="when">2018 – heden</div><h3>Zaakvoerder · Atelier Mystique</h3><p>Eigen winkel, webshop, online cursussen en workshops. Website en webshop zelf opgezet en beheerd.</p></li>
+    <li><div class="when">2025</div><h3>Diploma ICT en Administratie · CVO MIRAS</h3><p>Inclusief deelcertificaat E-services.</p></li>
+    <li><div class="when">2012 – 2016</div><h3>Management Assistant · Maenhout</h3><p>Boekhouding, facturatie, bestellingen, klantencontact en ondersteuning van de directie.</p></li>
+    <li><div class="when">2011 – 2012</div><h3>ICT-verantwoordelijke · Sociale dienst, Oostende</h3><p>ICT-ondersteuning van personeel, beheer van materiaal en software, interne ICT-opleidingen.</p></li>
+    <li><div class="when">tot 2013</div><h3>Bachelor Onderwijs informatica-economie · Katho Reno</h3><p>Module ICT volledig afgerond.</p></li>
+  </ul>
+</div></section>
+
+<section><div class="wrap">
+  <div class="why">
+    <h2>Waarom een halftijdse ICT-job?</h2>
+    <p>Omdat ICT altijd mijn eerste liefde is gebleven.</p>
+    <p>Mijn zaak blijft bestaan, maar een deel van de dagelijkse werking wordt overgenomen. Daardoor komt er ruimte vrij, en die wil ik gebruiken om opnieuw elke dag met ICT bezig te zijn: niet alleen voor mezelf, maar om anderen te helpen.</p>
+    <p>Een halftijdse functie past perfect bij de fase waarin ik vandaag zit.</p>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2>Let's meet</h2>
+  <p class="sub" style="margin:0 auto 10px">Zin in een kennismaking? Ik hoor graag van je.</p>
+  <div class="btns">
+    <a class="btn primary" href="mailto:ryckewaertvicky@gmail.com">ryckewaertvicky@gmail.com</a>
+  </div>
+</div></section>
+
+<footer>© Vicky Ryckewaert · Meet Vicky</footer>
+
+<script>
+const steps=[
+ {t:"Luisteren",p:"Wat is precies het probleem? Ik laat de gebruiker vertellen en stel gerichte vragen, zonder technisch jargon.",e:"“Mijn laptop doet raar” wordt: sinds wanneer, bij welk programma, wat zie je op het scherm?"},
+ {t:"Onderzoeken",p:"Waar loopt het mis? Ik zoek de oorzaak in plaats van alleen het symptoom te bestrijden.",e:"Ligt het aan het toestel, de software, de toegangsrechten of het netwerk?"},
+ {t:"Oplossen",p:"Wat werkt vandaag? Ik los op wat ik zelf kan, en weet wanneer ik een collega of externe partner inschakel.",e:"En ik laat de gebruiker weten waar hij of zij aan toe is, ook als het even duurt."},
+ {t:"Verbeteren",p:"Kan het de volgende keer eenvoudiger? Terugkerende vragen zijn een signaal dat het beter kan.",e:"Een korte handleiding, een betere standaardinstelling of een kleine opleiding voorkomt tien tickets."}
+];
+const tabs=[...document.querySelectorAll('.flow button')],panel=document.getElementById('panel');
+function show(i){tabs.forEach((b,j)=>b.setAttribute('aria-selected',i===j));const s=steps[i];
+ panel.innerHTML=`<h3>${s.t}</h3><p>${s.p}</p><div class="ex">${s.e}</div>`}
+tabs.forEach(b=>b.addEventListener('click',()=>show(+b.dataset.i)));show(0);
+</script>
+</body>
+</html>
